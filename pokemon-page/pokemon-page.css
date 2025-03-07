@@ -1,0 +1,49 @@
+.charizard-header {
+    margin: 20px;
+    text-align: center;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb119 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.blastoise-header {
+    margin: 20px;
+    text-align: center;
+    background-image: linear-gradient(to top, #0b0687 0%, #0616fb 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.venusaur-header {
+    margin: 20px;
+    text-align: center;
+    background-image: linear-gradient(to top, #067026 0%, #11de4f 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+img {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+}
+
+h4 {
+    text-align: center;
+}
+
+footer {
+    left: 50%;
+    position: fixed;
+    bottom: 20px;
+}

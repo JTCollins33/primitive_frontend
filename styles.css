@@ -194,3 +194,26 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+.pokemon-grid-header{
+    margin: 20px;
+    text-align: center;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb119 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.pokemon-image {
+    border: 1px solid black;
+    height: 90%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
