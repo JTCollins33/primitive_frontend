@@ -1,0 +1,41 @@
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./add-pokemon-page.css">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header_goes_here").load("../header/header.html")
+            $("#footer_goes_here").load("../footer/footer.html")
+        })
+    </script>
+    <!-- if didn't have defer attribute, the script would run before the page is loaded, causing an error -->
+    <script src="./add-pokemon-page.js" defer></script>
+    <title>Add Pokemon</title>
+</head>
+
+<div id="header_goes_here"></div>
+<div id="add-pokemon-container">
+    <form>
+        <div class="new-attribute">
+            <label>Pokemon Name</label>
+            <input type=text" id="pokemonName" name="pokemonName" required>
+        </div>
+        <div class="new-attribute">
+            <label for="pokemonTitle">Pokemon Title</label>
+            <input type="text" id="pokemonTitle" name="pokemonTitle" required>
+        </div>
+        <div class="new-attribute">
+            <label for="pokemonDescription">Pokemon Description</label>
+            <input type="text" id="pokemonDescription" name="pokemonDescription" required>
+        </div>
+        <div class="new-attribute">
+            <label for="pokemonImage">Image of Pokemon</label>
+            <input type="file" id="pokemonImagePicker" accept=".jpg, .png, .svg"/>
+        </div>
+        <button class="add-pokemon-submit-button">Submit</button>
+    </form>
+</div>
+<div id="footer_goes_here"></div>
