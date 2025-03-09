@@ -1,12 +1,27 @@
 <head>
     <link rel="stylesheet" href="pokemon-page.css">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header_goes_here").load("../header/header.html")
+            $("#footer_goes_here").load("../footer/footer.html")
+        });
+    </script>
 </head>
 
 <div>
-    <h1 class="charizard-header">The Flying Dragon: Charizard</h1>
-    <img src="../images/charizard.png" alt="charizard">
-    <h4>Charizard is known as a fearsome fire type pokemon. Make sure to stay out of his way!</h4>
+    <div id="header_goes_here"></div>
+    <div>
+        <h1 class="charizard-header">The Flying Dragon: Charizard</h1>
+        <img src="../images/charizard.png" alt="charizard">
+        <h4>Charizard is known as a fearsome fire type pokemon. Make sure to stay out of his way!</h4>
+    </div>
+    <div id="footer_goes_here"></div>
 </div>
+
 
 
 <script>

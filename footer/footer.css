@@ -1,5 +1,19 @@
-footer {
+/* footer {
     left: 50%;
     position: fixed;
     bottom: 20px;
+} */
+
+.footer-section .footer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
 }
