@@ -1,34 +1,23 @@
-.charizard-header {
+.pokemon-header{
     margin: 20px;
     text-align: center;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#charizard-header {
     background-image: linear-gradient(to top, #ff0844 0%, #ffb119 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
-
-.blastoise-header {
-    margin: 20px;
-    text-align: center;
+#blastoise-header {
     background-image: linear-gradient(to top, #0b0687 0%, #069dfb 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
-
-.venusaur-header {
-    margin: 20px;
-    text-align: center;
+#venusaur-header {
     background-image: linear-gradient(to top, #067026 0%, #11de4f 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
-img {
+#pokemon-image {
     display: block;
     margin-top: 100px;
     margin-bottom: 50px;
