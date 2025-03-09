@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" href="pokemon-page.css">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header_goes_here").load("../header/header.html")
+            $("#footer_goes_here").load("../footer/footer.html")
+        });
+    </script>
+</head>
+
+<div>
+    <div id="header_goes_here"></div>
+    <div id="pokemon-container">
+    </div>
+    <div id="footer_goes_here"></div>
+</div>
+
+<script src="pokemon-page.js"></script>

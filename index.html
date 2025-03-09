@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jay Collins">
+    <meta name="description" content="primitive web page using only HTML, CSS, and JS">
+    <title>Primitive FrontEnd</title>
+    <link rel="stylesheet" href="styles.css">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header_goes_here").load("header/header.html")
+            $("#footer_goes_here").load("footer/footer.html")
+        });
+    </script>
+</head>
+<body>
+    <div id="header_goes_here"></div>
+    <div>
+        <h1 class="pokemon-grid-header">Check out any of these Pokemon</h1>
+        <div class="pokemon-grid">
+            <a href="/pokemon-page/pokemon-page.html?pokemon=blastoise"><img class="pokemon-image" src="images/blastoise.jpg"></a>
+            <a href="/pokemon-page/pokemon-page.html?pokemon=charizard"><img class="pokemon-image" src="images/charizard.png"></a>
+            <a href="/pokemon-page/pokemon-page.html?pokemon=venusaur"><img class="pokemon-image" src="images/venusaur.jpg"></a>
+        </div>
+    </div>
+    <div id="footer_goes_here"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
