@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const imageElement = document.createElement("img")
     imageElement.src = POKEMON_IMAGE_DICT[pokemon]
     imageElement.alt = pokemon
+    imageElement.id = "pokemon-image"
     imageElement.className = pokemon+"-image"
     container.appendChild(imageElement)
 
