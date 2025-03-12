@@ -1,27 +1,33 @@
 import {addPokemonHeader, addPokemonText, addPokemonImage} from '../data/db.js'
 
-var pokemonName = "";
-var pokemonTitle = "";
-var pokemonDescription = "";
-var pokemonImageLocation="";
+let pokemonName = "";
+let pokemonTitle = "";
+let pokemonDescription = "";
+let pokemonImageLocation="";
+
+let pokemonList = [];
 
 document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.querySelector(".add-pokemon-submit-button")
 
     submitButton.addEventListener("click", function(){
-        console.log("submitting")
-        const pokemonName = document.getElementById("pokemonName").value;
-        const pokemonTitle = document.getElementById("pokemonTitle").value;
-        const pokemonDescription = document.getElementById("pokemonDescription").value;
-        const pokemonImageLocation = document.getElementById("pokemonImagePicker").value;
+        pokemonName = document.getElementById("pokemonName").value;
+        pokemonTitle = document.getElementById("pokemonTitle").value;
+        pokemonDescription = document.getElementById("pokemonDescription").value;
+        pokemonImageLocation = document.getElementById("pokemonImagePicker").value;
     
         // printValues([pokemonName, pokemonTitle, pokemonDescription, pokemonImageLocation])
         addValuesToDB(pokemonName, pokemonTitle, pokemonDescription, pokemonImageLocation)
     
         resetValues();
 
+
+        const container = document.getElementById("here")
         const dict = getPokemonHeaderDict()
-        console.log(dict)
+        const newElement = document.createElement("p")
+        newElement.innerText = dict;
+        container.appendChild(newElement)
+
     })
 })
 
