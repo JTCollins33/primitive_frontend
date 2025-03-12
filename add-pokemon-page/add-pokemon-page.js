@@ -5,20 +5,24 @@ var pokemonTitle = "";
 var pokemonDescription = "";
 var pokemonImageLocation="";
 
-submitButton = document.getElementsByClassName("add-pokemon-submit-button")[0]
-console.log(submitButton)
+document.addEventListener("DOMContentLoaded", function() {
+    const submitButton = document.querySelector(".add-pokemon-submit-button")
 
-submitButton.addEventListener("click", function(){
-    console.log("submitting")
-    const pokemonName = document.getElementById("pokemonName").value;
-    const pokemonTitle = document.getElementById("pokemonTitle").value;
-    const pokemonDescription = document.getElementById("pokemonDescription").value;
-    const pokemonImageLocation = document.getElementById("pokemonImagePicker").value;
+    submitButton.addEventListener("click", function(){
+        console.log("submitting")
+        const pokemonName = document.getElementById("pokemonName").value;
+        const pokemonTitle = document.getElementById("pokemonTitle").value;
+        const pokemonDescription = document.getElementById("pokemonDescription").value;
+        const pokemonImageLocation = document.getElementById("pokemonImagePicker").value;
+    
+        // printValues([pokemonName, pokemonTitle, pokemonDescription, pokemonImageLocation])
+        addValuesToDB(pokemonName, pokemonTitle, pokemonDescription, pokemonImageLocation)
+    
+        resetValues();
 
-    // printValues([pokemonName, pokemonTitle, pokemonDescription, pokemonImageLocation])
-    addValuesToDB(pokemonName, pokemonTitle, pokemonDescription, pokemonImageLocation)
-
-    resetValues();
+        const dict = getPokemonHeaderDict()
+        console.log(dict)
+    })
 })
 
 function addValuesToDB(pokemonName, pokemonTitle, pokemonDescription, pokemonImageLocation){

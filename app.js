@@ -1,5 +1,6 @@
-import {POKEMON_IMAGE_DICT} from './data/db.js'
+import {getPokemonImageDict} from './data/db.js'
 
+const POKEMON_IMAGE_DICT = getPokemonImageDict()
 const pokemonGrid = document.getElementsByClassName("pokemon-grid")[0]
 
 for(let [pokemonName, pokemonImageLocation] of Object.entries(POKEMON_IMAGE_DICT)){

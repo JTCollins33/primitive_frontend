@@ -16,6 +16,18 @@ const POKEMON_IMAGE_DICT = {
     "blastoise": "../images/blastoise.jpg"
 }
 
+function getPokemonHeaderDict(){
+    return POKEMON_HEADER_DICT
+}
+
+function getPokemonTextDict(){
+    return POKEMON_TEXT_DICT
+}
+
+function getPokemonImageDict(){
+    return POKEMON_IMAGE_DICT
+}   
+
 function addPokemonHeader(pokemonName, header){
     POKEMON_HEADER_DICT[pokemonName] = header
 }
@@ -28,4 +40,4 @@ function addPokemonImage(pokemonName, imagePath){
     POKEMON_IMAGE_DICT[pokemonName] = imagePath
 }
 
-export {POKEMON_HEADER_DICT, POKEMON_TEXT_DICT, POKEMON_IMAGE_DICT, addPokemonHeader, addPokemonText, addPokemonImage}
+export {getPokemonHeaderDict, getPokemonImageDict, getPokemonTextDict, addPokemonHeader, addPokemonText, addPokemonImage}

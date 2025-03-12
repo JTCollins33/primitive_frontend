@@ -1,9 +1,13 @@
-import {POKEMON_HEADER_DICT, POKEMON_TEXT_DICT, POKEMON_IMAGE_DICT} from '../data/db.js'
+import {getPokemonHeaderDict, getPokemonImageDict, getPokemonTextDict} from '../data/db.js'
 
 
 const urlParams = new URLSearchParams(window.location.search)
 const pokemon = urlParams.get('pokemon')
 const container = document.getElementById("pokemon-container")
+
+const POKEMON_HEADER_DICT = getPokemonHeaderDict()
+const POKEMON_TEXT_DICT = getPokemonTextDict()
+const POKEMON_IMAGE_DICT = getPokemonImageDict()
 
 document.addEventListener("DOMContentLoaded", function(){
     //set up header
