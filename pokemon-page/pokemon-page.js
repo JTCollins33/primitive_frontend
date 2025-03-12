@@ -1,40 +1,13 @@
-const CHARIZARD_HEADER = "The Flying Dragon: Charizard"
-const VENUSAUR_HEADER = "The Walking Fortress: Venusaur"
-const BLASTOISE_HEADER = "The Doubled-up Cannon: Blastoise"
-
-const CHARIZARD_TEXT = "Charizard is known as a fearsome fire type pokemon. Make sure to stay out of his way!"
-const VENUSAUR_TEXT = "Venusaur is a grass type pokemon that is known for its ability to heal itself. It is a formidable opponent."
-const BLASTOISE_TEXT = "Blastoise is a water type pokemon that is known for its ability to shoot water from its cannons. It is a powerful pokemon."
-
-const CHARIZARD_IMAGE_LOC = "../images/charizard.png"
-const VENUSAUR_IMAGE_LOC = "../images/venusaur.jpg"
-const BLASTOISE_IMAGE_LOC = "../images/blastoise.jpg"
-
-
-const POKEMON_HEADER_DICT = {
-    "charizard": CHARIZARD_HEADER,
-    "venusaur": VENUSAUR_HEADER,
-    "blastoise": BLASTOISE_HEADER
-}
-
-const POKEMON_TEXT_DICT = {
-    "charizard": CHARIZARD_TEXT,
-    "venusaur": VENUSAUR_TEXT,
-    "blastoise": BLASTOISE_TEXT
-}
-
-const POKEMON_IMAGE_DICT = {
-    "charizard": CHARIZARD_IMAGE_LOC,
-    "venusaur": VENUSAUR_IMAGE_LOC,
-    "blastoise": BLASTOISE_IMAGE_LOC
-}
-
-console.log("in the pokemon page")
+import {getPokemonHeaderDict, getPokemonImageDict, getPokemonTextDict} from '../data/db.js'
 
 
 const urlParams = new URLSearchParams(window.location.search)
 const pokemon = urlParams.get('pokemon')
 const container = document.getElementById("pokemon-container")
+
+const POKEMON_HEADER_DICT = getPokemonHeaderDict()
+const POKEMON_TEXT_DICT = getPokemonTextDict()
+const POKEMON_IMAGE_DICT = getPokemonImageDict()
 
 document.addEventListener("DOMContentLoaded", function(){
     //set up header
